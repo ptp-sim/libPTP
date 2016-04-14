@@ -1,0 +1,2 @@
+The ClockServo icon is a renamed and resized version of the configure.png file from the GPLv2 licensed Buttonized icon theme.
+The PI_ClockServo icon is based on the generic background of the Buttonized icon theme, combined with self-made artwork.

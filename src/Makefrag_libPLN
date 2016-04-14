@@ -1,0 +1,128 @@
+
+# ===================================================================
+# Instructions
+# ===================================================================
+#
+# This file contains configuration options to link against your
+# local libPLN installation. It needs to be customized to your
+# local setup.
+#
+# Changes to this file should be kept local, and should not be
+# commited upstream.
+#
+# To avoid checking in your local changes to this file, the
+# following git command might be useful:
+#
+#  git update-index --assume-unchanged src/Makefrag_libPLN
+#
+# The effect of this command can be inverted using the option
+# --no-assume-unchanged
+#
+
+# ===================================================================
+# Compiler flags
+# ===================================================================
+
+# ===================================================================
+# Macro definitions
+# ===================================================================
+
+# -------------------------------------------------------------------
+# HAS_LIBPLN flag
+# -------------------------------------------------------------------
+
+# Enable this define to use the libPLN library with the libPTP library.
+# If this option is set, the following dependancies have to be fulfilled:
+#
+# FFTW library
+# Boost library
+# libPLN and libPLN_Examples libraries
+#
+# The paths for includes and libraries, as well as the library names
+# have to be adapted to your local settings below.
+
+#CXXFLAGS += -DHAS_LIBPLN
+
+# ===================================================================
+# Include paths
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Include path for FFTW library
+# -------------------------------------------------------------------
+
+# ---------------------------------------------------
+# Wolfgang's machine (Linux):
+# ---------------------------------------------------
+# Not needed (default include path on linux)
+
+# ---------------------------------------------------
+# Wolfgang's machine (Windows):
+# ---------------------------------------------------
+# INCLUDE_PATH += -I"C:/FFTW32"
+
+# -------------------------------------------------------------------
+# Include paths for libPLN
+# -------------------------------------------------------------------
+
+# ---------------------------------------------------
+# Wolfgang's machine (Linux):
+# ---------------------------------------------------
+# INCLUDE_PATH += -I/main/TU/act/libPLN
+# INCLUDE_PATH += -I/main/TU/act/libPLN/src
+
+# ---------------------------------------------------
+# Wolfgang's machine (Windows):
+# ---------------------------------------------------
+# INCLUDE_PATH += -IC:/Projects/libPLN
+# INCLUDE_PATH += -IC:/Projects/libPLN/src
+
+# ===================================================================
+# Library paths
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Library path for libPLN
+# -------------------------------------------------------------------
+
+# ---------------------------------------------------
+# Wolfgang's machine (Linux):
+# ---------------------------------------------------
+# LIBS += -L/main/TU/act/libPLN/build/lib/static
+
+# ---------------------------------------------------
+# Wolfgang's machine (Windows):
+# ---------------------------------------------------
+# LIBS += -LC:/Projects/libPLN/build/lib/static
+
+# -------------------------------------------------------------------
+# Library path for FFTW
+# -------------------------------------------------------------------
+
+# ---------------------------------------------------
+# Wolfgang's machine (Linux):
+# ---------------------------------------------------
+# Not needed (default include path on linux)
+
+# ---------------------------------------------------
+# Wolfgang's machine (Windows):
+# ---------------------------------------------------
+# LIBS += -L"C:/FFTW32"
+
+# ===================================================================
+# Libraries
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Libraries for libPLN
+# -------------------------------------------------------------------
+
+# ---------------------------------------------------
+# Wolfgang's machine (Linux):
+# ---------------------------------------------------
+# LIBS += -lPLN_Examples -lPLN -lfftw3
+
+# ---------------------------------------------------
+# Wolfgang's machine (Windows):
+# ---------------------------------------------------
+# LIBS += -lPLN_Examples -lPLN -lfftw3-3

@@ -1,0 +1,13 @@
+The PTP message icons are based on icons from the GPLv2 licensed Buttonized icon theme.
+In detail, the original icons from which they are derived are as follows:
+
+Announce:       applications-chat.png
+DelayReq:       stock_repeat.png
+DelayResp:      stock_repeat.png
+Management:     package_settings.png
+PDelayReq:      stock_refresh.png
+PDelayResp:     stock_refresh.png
+PDelayRespFU:   stock_refresh.png
+Signaling:      emblem-important.png
+Sync:           bookmarks.png
+SyncFU:         bookmarks.png

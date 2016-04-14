@@ -1,0 +1,1 @@
+The PTP node icons are a derivative work of the generic background and the bookmarks.png file from the GPLv2 licensed Buttonized icon theme combinded with self-made artwork.

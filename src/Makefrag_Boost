@@ -1,0 +1,38 @@
+# ===================================================================
+# Instructions
+# ===================================================================
+#
+# This file contains configuration options to link against your
+# local boost installation. It needs to be customized to your
+# local setup.
+#
+# Changes to this file should be kept local, and should not be
+# commited upstream.
+#
+# To avoid checking in your local changes to this file, the
+# following git command might be useful:
+#
+#  git update-index --assume-unchanged src/Makefrag_Boost
+#
+# The effect of this command can be inverted using the option
+# --no-assume-unchanged
+#
+
+# ===================================================================
+# Compiler flags
+# ===================================================================
+
+# ===================================================================
+# Include paths
+# ===================================================================
+
+# Include path for Boost library
+#INCLUDE_PATH += -I"C:/boost"
+
+# ===================================================================
+# Library paths
+# ===================================================================
+
+# ===================================================================
+# Libraries
+# ===================================================================

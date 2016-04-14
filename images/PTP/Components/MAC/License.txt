@@ -1,0 +1,1 @@
+The MAC icon is renamed and resized version of the nm-device-wired.png file from the GPLv2 licensed Buttonized icon theme.

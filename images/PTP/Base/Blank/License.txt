@@ -1,0 +1,2 @@
+The Blank icon is a derivative work from the GPLv2 licensed Buttonized icon theme.
+It is the generic background that is common to all images.

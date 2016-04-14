@@ -1,0 +1,12 @@
+
+Relationship to the Buttonized icon theme:
+==================================================
+
+The icons used in the libPTP project are a derivative work.
+They are based on icons from the 'Buttonized' icon theme.
+This icon theme is licensed by Shaun Marolf under the terms of the GPLv2.
+
+Any derivative icons are again licensed under terms of the GPLv2.
+
+The URL from where the original Buttonized icon theme was downloaded is
+http://kde-look.org/content/show.php/?content=161553
