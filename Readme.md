@@ -159,9 +159,9 @@ Non-Portable libraries have been avoided, thus it is likely that it will work (m
 
 __Requirements:__
 
-* The [Boost C++ library][30], in a version before 5.x, preferrably 4.6
-* The [OMNeT++ simulation framework][31], in a version before 3.x, preferrably 2.6
-* The [INET library][32]
+* The [Boost C++ library][30]
+* The [OMNeT++ simulation framework][31], in a version before 5.x, preferrably 4.6
+* The [INET library][32], in a version before 3.x, preferrably 2.6
 * The [OMNeT_Utils project][33]
 * (optionally) The [LibPLN library][34], for realistic clock noise
 
@@ -174,6 +174,7 @@ __Requirements:__
 __Getting started:__
 
 * Install OMNeT++ 4.6 and INET 2.6
+* Install the Boost C++ library
 * Get the _OMNeT Utils_ repository, and add it in your OMNeT++ workspace
 * Get _LibPTP_, and add it in your OMNeT++ workspace
 * Create a new OMNeT++ project, and add LibPTP as project reference
