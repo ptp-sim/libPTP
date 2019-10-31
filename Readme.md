@@ -5,12 +5,12 @@ LibPTP: A Library for PTP Simulation
 Project description
 -------------------------------
 
-LibPTP is an implementation of the Precision Time Protocol (PTP) as it is specified in IEEE 1588-2008 in the simulation framework [OMNeT++][1].
-LibPTP uses models of standare network components from the [INET][2] library, and extends them with PTP functionality.
+LibPTP is an OMNeT++ libary to support simulation of the **Precision Time Protocol (PTP)** as it is specified in IEEE 1588-2008 in the simulation framework [OMNeT++][1].
+LibPTP uses models of standard network components from the [INET][2] library, and extends them with PTP functionality.
 
-This library is one of the outcomes of my master thesis, _Simulation of Time-synchronized Networks using IEEE 1588-2008_, published at the University of Technology in 2016.
+This library is one of the outcomes of the master thesis _Simulation of Time-synchronized Networks using IEEE 1588-2008_, published at the University of Technology in 2016.
 
-The current version of this library can be found on the [author's Github site][3].
+The current version of this library can be found on [Github][3].
 
 Feature list of LibPTP:
 
@@ -37,11 +37,11 @@ For an example for what is possible with LibPTP see the following image, which s
 
 <img src="doc/img/SyncInterval_Mean.png" width="500" />
 
-The images shows the mean offset value a PTP slave node that is directly connected to its master, depending on the configured sync interval.
+The images shows the mean offset value of a PTP slave node that is directly connected to its master, depending on the configured sync interval.
 The same simulation was carried out with two different oscillators, and LibPTP allows to study the behavior of each of them.
 
-Another advantage of LibPTP are its sophisticated debugging and tracing capabilities.
-For example it is easy to trace all state decisions of a PTP node, as shown in the following image:
+Other advantages of LibPTP are its sophisticated debugging and tracing capabilities.
+For example, it is easy to trace all state decisions of a PTP node, as shown in the following image:
 
 <img src="doc/img/BC8_Port2_StateDecisions.png" width="600" />
 
@@ -64,7 +64,7 @@ To make full use of it, LibPTP uses custom icons for all PTP related models.
 
 __PTP Nodes:__
 
-The example components that come with LibPTP use an icon scheme to visualize there attributes:
+The example components that come with LibPTP use an icon scheme to visualize their attributes:
 
 The node icons have a symbol in each corner:
 * __Upper left:__ Node type
@@ -82,25 +82,25 @@ The node icons have a symbol in each corner:
 
 * __Lower right:__ Clock attributes for Best Master Clock Algorithm (BMCA)
     * Golden star: Excellent clock attributes, such a node will prefer its ports to be passive rather than slave
-    * Silver star: Average clock attributes, such a clock will loose in the BMCA against a clock with golden star
-    * Brozne star: Bad clock attributes, such a clock will loose in the BMCA against a clock with silver star
+    * Silver star: Average clock attributes, such a clock will loose in the BMCA against a clock with a golden star
+    * Brozne star: Bad clock attributes, such a clock will loose in the BMCA against a clock with a silver star
     * No icon: Slave only
 
 The image in the center shows a boundary clock, with P2P delay mechanism, which is 1-step capable and has average clock attributes.
-    
+
 <img src="doc/img/NodeSymbols.png" width="500" />
 
 __Example network:__
 
-The folloing images shows an example network to visualize the example icons used by LibPTP:
+The folloing image shows an example network to visualize the example icons used by LibPTP:
 
 <img src="doc/img/NodeSymbols_ExampleNetwork.png" width="500" />
 
-All nodes in the PTP network use the P2P delay mechanism (blue P).
-The left-most node is a 1-step capable (1) ordinary clock (E) with excellent clock attributes (golden star).
-It is connected to a 1-step capble boundary clock (B) with average clock attributes (silver star).
-The boundary clock is connected to two daisy chains to the right.
-The upper chain consist of two slave only (no icon) transparent clocks (T), where the second one is only 2-step capable (2), followed by an ordinary clock with bad clock attributes.
+All nodes in this PTP network use the P2P delay mechanism (blue P).
+The left-most node is a 1-step capable (1) ordinary clock (N) with excellent clock attributes (golden star).
+It is connected to a 1-step capable boundary clock (B) with average clock attributes (silver star).
+The boundary clock is connected to two daisy chains on the right.
+The upper chain consists of two slave-only (no icon) transparent clocks (T), where the second one is only 2-step capable (2), followed by an ordinary clock with bad clock attributes.
 The lower chain consists of a transparent, a boundary and an ordinary clock.
 
 As only one clock has a golden star, we can safely assume that it will win the BMCA and become the grand master of the PTP network.
@@ -118,20 +118,20 @@ Project structure
 -------------------------------
 
 The _src_ directory contains most of the project relevant contents.
-It structured as follwos: Most of the individual parts of a PTP system are loosely grouped into the folders _Hardware_, _Firmware_ and _Sotware_.
-These individual parts are then plugged to together to form network components, which are placed in the _Components_ directory.
+It is structured as follwos: Most of the individual parts of a PTP system are loosely grouped into the folders _Hardware_, _Firmware_ and _Sotware_.
+These individual parts are then plugged together to form network components, which are placed in the _Components_ directory.
 The _Utils_ folder contains generic utilities.
 
 The other directories are the following:
 
 * `doc:` Documentation for the project, mainly doxygen generated files.
-* `Docs:` Various documents, mainly related to measuremnt results.
+* `Docs:` Various documents, mainly related to measurement results.
 * `images:` The image files for the OMNeT++ models.
 * `Tools:` This the place for generic tools like shell scripts.
 
 Documentation format
 -------------------------------
- 
+
 The documentation files in this repository are written in [Markdown][20] (line ending *.md).
 They can be either read in a text editor, are converted to HTML using the markdown utility.
 
@@ -143,25 +143,25 @@ Usage
 __Documentation:__
 
 * Doxygen files can be found in the _doc_ directory
-* The _Docs_ contains various files with additional information (e.g. how to use LibPTP together with LibPLN)
-* Both LibPLN and LibPTP have been developed as part of my master thesis:
+* The _Docs_ directory contains various files with additional information (e.g. how to use LibPTP together with LibPLN)
+* Both LibPLN and LibPTP have been developed as part of the following master thesis:
 
 _Wolfgang Wallner_, __Simulation of Time-synchronized Networks using IEEE 1588-2008__, 2016, Vienna University of Technology
 
-This document contains an in-depth description on the various design decitions of both libraries, and would be the definitive source of information.
-As of April 2016, it is __not yet published__.
-Expected publication date: __May or June 2016__
+Persistent URL: https://resolver.obvsg.at/urn:nbn:at:at-ubtuw:1-3908
+
+This document contains an in-depth description on the various design decitions of both libraries.
 
 __Supported platforms:__
 
-LibPTP has been tested on Linux and Windows.
+LibPTP has been tested on Linux (Kubuntu 16.04) and Windows 7.
 Non-Portable libraries have been avoided, thus it is likely that it will work (maybe with small adjustments) also on other platforms.
 
 __Requirements:__
 
 * The [Boost C++ library][30]
-* The [OMNeT++ simulation framework][31], in a version before 5.x, preferrably 4.6
-* The [INET library][32], in a version before 3.x, preferrably 2.6
+* The [OMNeT++ simulation framework][31], in version 4.6
+* The [INET library][32], in version 2.6
 * The [OMNeT_Utils project][33]
 * (optionally) The [LibPLN library][34], for realistic clock noise
 
@@ -174,14 +174,14 @@ __Requirements:__
 __Getting started:__
 
 * Install OMNeT++ 4.6 and INET 2.6
-* Install the Boost C++ library
-* Get the _OMNeT Utils_ repository, and add it in your OMNeT++ workspace
-* Get _LibPTP_, and add it in your OMNeT++ workspace
-* Create a new OMNeT++ project, and add LibPTP as project reference
+* Install the Boost C++ library on your system
+* Get the _OMNeT Utils_ repository, and add it into your OMNeT++ workspace
+* Get _LibPTP_, and import it into your OMNeT++ workspace
+* Create a new OMNeT++ project, and add LibPTP as a project reference
     * You can now use PTP nodes in your network simulation
-    * For an example on how to create PTP simulation networks, have a look at the examples in the _PTP Simulations_ repository
+    * For an example on how to create PTP simulation networks, have a look at the example simulations in the _PTP Simulations_ repository
 * (Optional) Install LibPLN, and provide information about its installation in the provided _makefrag_ file
-    * This enables you to simulate network nodes with realistic clock noise, and thus make PTP simulations more plausible
+    * This enables you to simulate network nodes with realistic clock noise, and thus makes PTP simulations more plausible
 
 Credits
 -------------------------------
