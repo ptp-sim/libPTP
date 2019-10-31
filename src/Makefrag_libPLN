@@ -32,7 +32,7 @@
 # -------------------------------------------------------------------
 
 # Enable this define to use the libPLN library with the libPTP library.
-# If this option is set, the following dependancies have to be fulfilled:
+# If this option is set, the following dependencies have to be fulfilled:
 #
 # FFTW library
 # Boost library
