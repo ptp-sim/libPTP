@@ -24,8 +24,8 @@ Feature list of LibPTP:
 
 [1]: https://omnetpp.org/
 [2]: https://inet.omnetpp.org/
-[3]: https://github.com/w-wallner/libPTP
-[4]: https://github.com/w-wallner/libPLN
+[3]: https://github.com/ptp-sim/libPTP
+[4]: https://github.com/ptp-sim/libPLN
 
 Project overview
 -------------------------------
@@ -54,7 +54,7 @@ The LibPTP repository contains only the actual simulation model for PTP nodes.
 It does not contain any simulatons networks.
 Example simulations can be found in the [PTP Simulations][10] repository.
 
-[10]: https://github.com/w-wallner/PTP_Simulations
+[10]: https://github.com/ptp-sim/PTP_Simulations
 
 Node Symbols
 -------------------------------
@@ -168,8 +168,8 @@ __Requirements:__
 [30]: http://www.boost.org/
 [31]: https://omnetpp.org/omnetpp/category/30-omnet-releases
 [32]: https://inet.omnetpp.org/Download.html
-[33]: https://github.com/w-wallner/OMNeT_Utils
-[34]: https://github.com/w-wallner/libPLN
+[33]: https://github.com/ptp-sim/OMNeT_Utils
+[34]: https://github.com/ptp-sim/libPLN
 
 __Getting started:__
 
