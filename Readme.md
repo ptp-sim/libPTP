@@ -2,6 +2,13 @@
 LibPTP: A Library for PTP Simulation
 ==============================================================
 
+Project relationship
+-------------------------------
+
+This project is part of the **ptp-sim** project.
+See the [ptp-sim project page](https://ptp-sim.github.io/) for more information.
+There is also the [ptp-sim discussion forum](http://ptp-sim.boards.net) for further discussions.
+
 Project description
 -------------------------------
 
@@ -209,4 +216,4 @@ The images of LibPTP keep this license, and are thus also licensed unter the _GP
 Contact
 -------------------------------
 
-Wolfgang Wallner (wolfgang-wallner [AT] gmx.at)
+Please visit the [ptp-sim discussion forum](http://ptp-sim.boards.net) for further discussions.
