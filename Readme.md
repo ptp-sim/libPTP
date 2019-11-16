@@ -210,7 +210,7 @@ License
 
 Most parts of this project are licensed under the _GPLv3 license_. See the _COPYING_ file for details.
 
-As stated, the icons use by LibPTP are based on the _Buttonized_ icon theme, which is licensed unter the _GPLv2 license_.
+As stated, the icons used by LibPTP are based on the _Buttonized_ icon theme, which is licensed unter the _GPLv2 license_.
 The images of LibPTP keep this license, and are thus also licensed unter the _GPLv2 license_. See the _images/LICENSE.txt_ file for details.
 
 Contact
