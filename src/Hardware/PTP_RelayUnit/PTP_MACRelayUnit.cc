@@ -63,7 +63,7 @@ PTP_MACRelayUnit::handleAndDispatchFrame_Dispatch(EtherFrame *frame, int inputpo
 
     if( internalPort >= 0 )
     {
-        if( pEthFrame->getDest() == MAC )
+        if( frame->getDest() == MAC )
         {
             send(frame, "ifOut", internalPort);
             return;
